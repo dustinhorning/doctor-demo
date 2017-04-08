@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+    <plate>
+        <head>
+          <doctype>html5</doctype>
+          <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <script src="//code.jquery.com/jquery-1.12.4.min.js" />
+          <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" />
+          <script src="//cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.js" />
+          <link  rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+            <link  rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+          <googlefont family="Montserrat" />
+          <googlefont family="Droid Serif" />
+          <googlefont family="Roboto Slab" />
+          <googlefont family="Aladin" />
+          <googlefont family="Elsie Swash Caps" />
+          <googlefont family="Raleway" />
+        </head>
+        <clippings>
+          <text name="site_name" name_friendly="Site Name" required="1"><![CDATA[Garnet Lash Website]]></text>
+          <images name="logo" name_friendly="Site Logo" limit="1"><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Garnet-Logo.png]]></images>
+          <text name="footer_text" name_friendly="Footer Text"><![CDATA[Garnet Enterprises]]></text>
+          <images name="form_background_image" name_friendly="Form Background Image"><![CDATA[https://1f6d6298c93a5c13bc66-b51af920a2f21ba9f3e3bfcd36fc93f6.ssl.cf2.rackcdn.com/No-More-Falsies01.jpg]]></images>
+          <text name="global_hashtag" name_friendly="Global Hashtag (tied to all areas of the site)" required="1"><![CDATA[#garnetlashstudios]]></text>
+          <text name="product_nick_name" name_friendly="Product Nick Name (used in for short form product refernces)" required="1"><![CDATA[Service]]></text>
+          <text name="featured_title" name_friendly="Feature title"><![CDATA[Services I Offer]]></text>
+          <text name="form_title" name_friendly="Form Title" required="1"><![CDATA[Interested in Learning More?]]></text>
+          <textarea name="form_text" name_friendly="Form Sub Text" required="1"><![CDATA[Request more information and I'll be sure to be in contact with you.]]></textarea>
+          <text name="form_webhook" name_friendly="Form Webhook (optional)" />
+          <text name="form_button_text" name_friendly="Form Button Text" required="1"><![CDATA[Lash Me!]]></text>
+          <!-- book now fields Chloe added: btn, link, icon -->
+          <color name="book_now_button" name_friendly="Book Now Button (color)"><![CDATA[#ffffff]]></color>
+          <link name="book_now_link" name_friendly="Book Now Link" />
+          <fontawesome name="fontawesome_icon" name_friendly="My Fontawesome Icon (get icon from http://fontawesome.io/icons/)"><![CDATA[fa-calendar-check-o]]></fontawesome>
+        </clippings>
+        <ingredients>
+          <dataset name="social_links" name_friendly="Social Links">
+              <fields>
+                  <text name="name" name_friendly="Social Media Name" required="1" list="1" />
+                  <text name="font_awesome_icon" name_friendly="Font Awesome Icon Name" required="1" list="1" />
+                  <text name="url" name_friendly="Social Media Link" limit="1" list="1"/>
+                  <sort name="sort" name_friendly="Sort Order" list="1"/>
+              </fields>
+              <items>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Facebook]]></name>
+                      <font_awesome_icon><![CDATA[facebook]]></font_awesome_icon>
+                      <url><![CDATA[https://www.facebook.com]]></url>
+                      <sort><![CDATA[1]]></sort>
+                  </item>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Pinterest]]></name>
+                      <font_awesome_icon><![CDATA[pinterest]]></font_awesome_icon>
+                      <url><![CDATA[https://www.pinterest.com]]></url>
+                      <sort><![CDATA[2]]></sort>
+                  </item>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Instagram]]></name>
+                      <font_awesome_icon><![CDATA[instagram]]></font_awesome_icon>
+                      <url><![CDATA[https://www.instagram.com]]></url>
+                      <sort><![CDATA[3]]></sort>
+                  </item>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Twitter]]></name>
+                      <font_awesome_icon><![CDATA[twitter]]></font_awesome_icon>
+                      <url><![CDATA[https://www.twitter.com]]></url>
+                      <sort><![CDATA[4]]></sort>
+                  </item>
+              </items>
+          </dataset>
+          <dataset name="featured_in" name_friendly="Services I Offer">
+              <fields>
+                  <text name="name" name_friendly="Name of Feature Logo" required="1" list="1" />
+                  <images name="image" name_friendly="Logo" limit="1" list="1"/>
+                  <text name="url" name_friendly="Link (optional)" limit="1" list="1" />
+                  <sort name="sort_order" name_friendly="Sort Order" list="1" />
+              </fields>
+              <items>
+                  <item link_title="Eyelash Extensions" path_part="">
+                      <name><![CDATA[Eyelash Extensions]]></name>
+                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/eyelashes.png]]></image>
+                      <url><![CDATA[]]></url>
+                      <sort_order><![CDATA[1]]></sort_order>
+                  </item>
+                  <item link_title="Microblading" path_part="">
+                      <name><![CDATA[Microblading]]></name>
+                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/microbladed-brows.png]]></image>
+                      <url><![CDATA[http://www.example.com]]></url>
+                      <sort_order><![CDATA[2]]></sort_order>
+                  </item>
+                  <item link_title="Waxing" path_part="">
+                      <name><![CDATA[Waxing]]></name>
+                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/wax.png]]></image>
+                      <url><![CDATA[http://www.example.com]]></url>
+                      <sort_order><![CDATA[3]]></sort_order>
+                  </item>
+                  <item link_title="Facials" path_part="">
+                      <name><![CDATA[Facials]]></name>
+                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/face-mask.png]]></image>
+                      <url><![CDATA[http://www.example.com]]></url>
+                      <sort_order><![CDATA[4]]></sort_order>
+                  </item>
+              </items>
+          </dataset>
+          <dataset name="footer_links" name_friendly="Footer Links">
+            <fields>
+                <text name="name" name_friendly="Name" required="1" list="1" />
+                <sort name="sort_order" name_friendly="Sort Order" list="1" />
+            </fields>
+            <items>
+                <item link_title="" path_part="">
+                    <name><![CDATA[Home]]></name>
+                    <sort_order><![CDATA[1]]></sort_order>
+                </item>
+            </items>
+          </dataset>
+          <dataset name="nav_links" name_friendly="Navigation">
+            <fields>
+                <text name="name" name_friendly="Name" required="1" list="1" />
+                <internal_link name="internal_nav_link" name_friendly="Internal Nav Link" list="1" />
+                <text name="external_link" name_friendly="External Link" list="1" />
+                <internal_link name="parent_link" name_friendly="Parent Link" list="1"/>
+                <sort name="sort_order" name_friendly="Sort Order" list="1" />
+            </fields>
+            <items>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Facials]]></name>
+                  <internal_nav_link><![CDATA[559]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[507]]></parent_link>
+                  <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Waxing]]></name>
+                  <internal_nav_link><![CDATA[558]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[507]]></parent_link>
+                  <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Microblading]]></name>
+                  <internal_nav_link><![CDATA[557]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[507]]></parent_link>
+                  <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Lash Extensions]]></name>
+                  <internal_nav_link><![CDATA[556]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[507]]></parent_link>
+                  <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Home]]></name>
+                  <internal_nav_link><![CDATA[517]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[0]]></parent_link>
+                  <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[About]]></name>
+                  <internal_nav_link><![CDATA[501]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[0]]></parent_link>
+                  <sort_order><![CDATA[2]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Testimonials]]></name>
+                  <internal_nav_link><![CDATA[503]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[0]]></parent_link>
+                  <sort_order><![CDATA[3]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Social Media]]></name>
+                  <internal_nav_link><![CDATA[505]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[0]]></parent_link>
+                  <sort_order><![CDATA[4]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Services]]></name>
+                  <internal_nav_link><![CDATA[507]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[0]]></parent_link>
+                  <sort_order><![CDATA[5]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Contact Us]]></name>
+                  <internal_nav_link><![CDATA[513]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[0]]></parent_link>
+                  <sort_order><![CDATA[6]]></sort_order>
+                </item>
+                <item link_title="" path_part="">
+                  <name><![CDATA[Book Now]]></name>
+                  <internal_nav_link><![CDATA[515]]></internal_nav_link>
+                  <external_link><![CDATA[]]></external_link>
+                  <parent_link><![CDATA[0]]></parent_link>
+                  <sort_order><![CDATA[7]]></sort_order>
+                </item>
+            </items>
+          </dataset>
+          <!-- 1. Homepage -->
+          <templateset name="homepage" name_friendly="Homepage" view="homepage">
+              <fields>
+                  <text name="hero_title" name_friendly="Hero Text" required="1" />
+                  <text name="hero_subtitle" name_friendly="Hero Subtitle" required="1" />
+                  <text name="hero_button_text" name_friendly="Hero Button Text" required="1" />
+                  <images name="hero_image" name_friendly="Hero Image (Default image if feature article has no image)" limit="1" />
+                  <text name="social_section_title" name_friendly="Social Section Title" required="1" />
+                  <textarea name="social_feed_embed" name_friendly="Social Feed Embed" />
+                  <text name="social_section_button_text" name_friendly="Social Section Button Text" required="1" />
+                  <text name="timeline_title" name_friendly="Timeline Title" required="1" />
+                  <text name="timeline_subtitle" name_friendly="Timeline Subtitle" required="1" />
+                  <text name="button_text_3" name_friendly="Button Text (Section 3)" required="1" />
+                  <text name="title4" name_friendly="Title (Section 4)" required="1" />
+                  <text name="sub_title4" name_friendly="Sub Title (Section 4)" required="1" />
+                  <text name="button_text_4" name_friendly="Button Text (Section 4)" required="1" />
+              </fields>
+              <items>
+                  <item link_title="Home" path_part="zesty_home">
+                      <hero_title><![CDATA[Intro Title]]></hero_title>
+                      <hero_subtitle><![CDATA[Large Title]]></hero_subtitle>
+                      <hero_button_text><![CDATA[Book Now]]></hero_button_text>
+                      <hero_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-2.jpeg]]></hero_image>
+                      <social_section_title><![CDATA[Social Feed Title]]></social_section_title>
+                      <social_feed_embed><![CDATA[<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ac000d8cd2f05b19ac23d0059606c661.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>]]></social_feed_embed>
+                      <social_section_button_text><![CDATA[See More Posts]]></social_section_button_text>
+                      <timeline_title><![CDATA[Who Are Lashes For?]]></timeline_title>
+                      <timeline_subtitle><![CDATA[Everyone, really! Check these out to see where you fit in.]]></timeline_subtitle>
+                      <button_text_3><![CDATA[Share This!]]></button_text_3>
+                      <title4><![CDATA[Lashes Change Lives!]]></title4>
+                      <sub_title4><![CDATA[We could tell you, but we'll let our customers do the talking. ]]></sub_title4>
+                      <button_text_4><![CDATA[Read Their Stories]]></button_text_4>
+                  </item>
+              </items>
+          </templateset>
+          <dataset name="homepage_timeline" name_friendly="Homepage Timeline" parent_item="zesty_home">
+            <fields>
+                <text name="bubble_title" name_friendly="Name of Feature Logo" required="1" />
+                <text name="bubble_subtitle" name_friendly="Name of Feature Logo" required="1" />
+                <images name="bubble_image" name_friendly="Logo" limit="1" />
+                <textarea name="bubble_blurb" name_friendly="Short Blurb" />
+                <sort name="sort_order" name_friendly="Sort Order" list="1" />
+            </fields>
+            <items>
+              <item link_title="" path_part="">
+                <bubble_title><![CDATA[The On-The-Go Momma]]></bubble_title>
+                <bubble_subtitle><![CDATA[]]></bubble_subtitle>
+                <bubble_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/On-The-Go-Mommy.jpg]]></bubble_image>
+                <bubble_blurb><![CDATA[The on-the-go mom should most definitely treat herself to eyelash extensions! Make mornings easier and always look and feel beautiful!]]></bubble_blurb>
+                <sort_order><![CDATA[1]]></sort_order>
+              </item>
+              <item link_title="" path_part="">
+                <bubble_title><![CDATA[The Always On Entrepreneur]]></bubble_title>
+                <bubble_subtitle><![CDATA[]]></bubble_subtitle>
+                <bubble_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Always-On-Entrepreneur.jpg]]></bubble_image>
+                <bubble_blurb><![CDATA[Always running around? Rushing from meeting to meeting? You go, superstar. Keep your lashes as amazing as you 24/7!]]></bubble_blurb>
+                <sort_order><![CDATA[2]]></sort_order>
+              </item>
+              <item link_title="" path_part="">
+                <bubble_title><![CDATA[The Pamperer]]></bubble_title>
+                <bubble_subtitle><![CDATA[]]></bubble_subtitle>
+                <bubble_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/The-Pamperer.jpg]]></bubble_image>
+                <bubble_blurb><![CDATA[Treat yo'self. Why not?]]></bubble_blurb>
+                <sort_order><![CDATA[3]]></sort_order>
+              </item>
+              <item link_title="" path_part="">
+                <bubble_title><![CDATA[The Squad]]></bubble_title>
+                <bubble_subtitle><![CDATA[]]></bubble_subtitle>
+                <bubble_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/The-Squad.jpg]]></bubble_image>
+                <bubble_blurb><![CDATA[Got a bridal party together? Want to do something out of the ordinary to celebrate someones birthday? #SquadUp and get some lashes on, ladies!]]></bubble_blurb>
+                <sort_order><![CDATA[4]]></sort_order>
+              </item>
+            </items>
+          </dataset>
+          <!-- 2. Book Now -->
+
+          <templateset name="book_now" name_friendly="Book Now" view="book_now">
+            <fields>
+              <text name="title" name_friendly="Title" />
+              <images name="image" name_friendly="Image" />
+              <textarea name="embed" name_friendly="Acuity iframe Embed Link" />
+              <wysiwyg_advanced name="content" name_friendly="Content" />
+              <yes_no name="book_now_button" name_friendly="Book Now Button?" options="0:Show Button;1:Don't Show Button;"/>
+            </fields>
+            <items>
+              <item link_title="Book Now" path_part="book-now">
+                  <title><![CDATA[Book Now]]></title>
+                  <image><![CDATA[]]></image>
+                  <embed><![CDATA[<iframe src="https://app.acuityscheduling.com/schedule.php?owner=13264782" width="100%" height="800" frameBorder="0"></iframe>
+                  <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>]]></embed>
+                  <content><![CDATA[Book your appointment now!]]></content>
+                  <book_now_button><![CDATA[1]]></book_now_button>
+              </item>
+            </items>
+          </templateset>
+          <!-- 3. Contact Us -->
+          <templateset name="contact_us" name_friendly="Contact Us" view="contact_us">
+            <fields>
+              <text name="title" name_friendly="Title" />
+              <text name="location_name" name_friendly="Location Name" />
+              <text name="address" name_friendly="Street Address" />
+              <text name="city" name_friendly="City" />
+              <text name="state" name_friendly="State" />
+              <text name="zip" name_friendly="Zip Code" />
+              <text name="phone" name_friendly="Phone" />
+              <text name="email" name_friendly="Email" />
+              <textarea name="map_embed" name_friendly="Map Embed" />
+              <images name="backup_photo" name_friendly="Image (will only show if there is not a Google Maps Embed link)" />
+            </fields>
+            <items>
+              <item link_title="Contact Us" path_part="contact-us" parent_item="contact-us">
+                  <title><![CDATA[Garnet Lash Studio]]></title>
+                  <location_name><![CDATA[]]></location_name>
+                  <address><![CDATA[2053 Garnet Ave,]]></address>
+                  <city><![CDATA[San Diego]]></city>
+                  <state><![CDATA[CA]]></state>
+                  <zip><![CDATA[92109]]></zip>
+                  <phone><![CDATA[(619) 339-4529]]></phone>
+                  <email><![CDATA[info@garnetlash.com]]></email>
+                  <map_embed><![CDATA[<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.652031452677!2d-117.23445798481734!3d32.8014845809646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc01c80a23db85%3A0x84854ad1421412d9!2sGarnet+Lash+Extensions+Studio!5e0!3m2!1sen!2sus!4v1487488586997" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>]]></map_embed>
+                  <backup_photo><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></backup_photo>
+              </item>
+            </items>
+          </templateset>
+          <dataset name="hours_of_operation" name_friendly="Hours of Operation (leave blank if closed)" parent_item="contact-us">
+                 <fields>
+                     <text name="day_of_week" name_friendly="Day of Week" list="1" />
+                     <text name="open" name_friendly="Open" list="1" />
+                     <text name="close" name_friendly="Close" list="1" />
+                     <sort name="sort_order" name_friendly="Sort Order" list="1" />
+                 </fields>
+                 <items>
+                   <item>
+                     <day_of_week><![CDATA[Sunday]]></day_of_week>
+                     <open><![CDATA[9:00]]></open>
+                     <close><![CDATA[3:00]]></close>
+                     <sort_order><![CDATA[1]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Monday]]></day_of_week>
+                     <open><![CDATA[8:00]]></open>
+                     <close><![CDATA[7:00]]></close>
+                     <sort_order><![CDATA[2]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Tuesday]]></day_of_week>
+                     <open><![CDATA[8:00]]></open>
+                     <close><![CDATA[7:00]]></close>
+                     <sort_order><![CDATA[3]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Wednesday]]></day_of_week>
+                     <open><![CDATA[9:00]]></open>
+                     <close><![CDATA[5:00]]></close>
+                     <sort_order><![CDATA[4]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Thursday]]></day_of_week>
+                     <open><![CDATA[8:00]]></open>
+                     <close><![CDATA[7:00]]></close>
+                     <sort_order><![CDATA[5]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Friday]]></day_of_week>
+                     <open><![CDATA[8:00]]></open>
+                     <close><![CDATA[7:00]]></close>
+                     <sort_order><![CDATA[6]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Saturday]]></day_of_week>
+                     <open><![CDATA[9:00]]></open>
+                     <close><![CDATA[3:00]]></close>
+                     <sort_order><![CDATA[7]]></sort_order>
+                   </item>
+                 </items>
+               </dataset>
+
+          <!-- Generic page -->
+          <templateset name="generic-page" name_friendly="Generic Page" view="generic-page">
+            <fields>
+              <text name="title" name_friendly="Page Title (h1)" required="1" />
+              <wysiwyg_advanced name="content" name_friendly="Page Content" />
+            </fields>
+            <items>
+              <item link_title="Privacy Policy" path_part="privacy-policy" hidden="true">
+                  <title><![CDATA[Privacy Policy]]></title>
+                  <content><![CDATA[<p>See an example boilerplate privacy policy here: <a href="https://www.bbb.org/dallas/for-businesses/bbb-sample-privacy-policy1/">https://www.bbb.org/dallas/for-businesses/bbb-sample-privacy-policy1/</a></p>]]></content>
+              </item>
+              <item link_title="Terms of Use" path_part="terms-of-use" hidden="true">
+                  <title><![CDATA[Terms of Use]]></title>
+                  <content><![CDATA[<p>See an example boilerplate terms of use here: <a href="https://termsfeed.com/blog/sample-terms-of-use-template/">https://termsfeed.com/blog/sample-terms-of-use-template/</a></p>]]></content>
+              </item>
+              <item link_title="Thank You" path_part="thank-you" hidden="true">
+                  <title><![CDATA[Thank You]]></title>
+                  <content><![CDATA[<p>We will be sending you awesome stories once a month.</p>]]></content>
+              </item>
+              </items>
+          </templateset>
+
+          <!-- 4. Blog --><!-- Randy will add this in as an option when the bepi is loaded -->
+          <!-- 5. Services -->
+          <templateset name="services" name_friendly="Services" view="services">
+              <fields>
+                  <text name="title" name_friendly="Page Title" required="1" />
+                  <wysiwyg_advanced name="description" name_friendly="Optional Page Description" />
+              </fields>
+              <items>
+                  <item link_title="Services" path_part="services">
+                      <title><![CDATA[]]></title>
+                      <description><![CDATA[]]></description>
+                  </item>
+              </items>
+          </templateset>
+          <!-- 5.3 Services: service category pageset -->
+          <pageset name="service-category" name_friendly="Service Category" view="service_category" parent_item="services">
+            <fields>
+                <text name="name" name_friendly="Name" list="1" />
+                <images name="main_image" name_friendly="Main Image" list="1" />
+                <wysiwyg_basic name="description" name_friendly="Description" />
+                <sort name="sort_order" name_friendly="Sort Order" list="1" />
+            </fields>
+            <items>
+                <item link_title="Lash Extensions" path_part="lash-extensions" parent="services">
+                    <name><![CDATA[Lash Extensions]]></name>
+                    <main_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/eyelashes.png]]></main_image>
+                    <description><![CDATA[<p>Eyelash extensions are the perfect way to add some glamour to your life 24/7. By adhering one eyelash extension to every natural lash, I’m able to create a completely custom look for every client that is maintainable for the long-term.</p>]]></description>
+                    <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="Microblading" path_part="microblading" parent="services">
+                    <name><![CDATA[Microblading]]></name>
+                    <main_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/microbladed-brows.png]]></main_image>
+                    <description><![CDATA[<p>Microblading is a semi-permanent makeup technique where pigment is used to create the illusion of fine hairs, filling and shaping brows to your exact specifications. Results are stunning and last up to three years!</p>]]></description>
+                    <sort_order><![CDATA[2]]></sort_order>
+                </item>
+                <item link_title="Waxing" path_part="waxing" parent="services">
+                    <name><![CDATA[Waxing]]></name>
+                    <main_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/wax.png]]></main_image>
+                    <description><![CDATA[<p>I offer an array of waxing specialties. I use a certified mixture of hard and soft wax to maximize speed and hair removal while minimizing pain.</p>]]></description>
+                    <sort_order><![CDATA[3]]></sort_order>
+                </item>
+                <item link_title="Facials" path_part="facials" parent="services">
+                    <name><![CDATA[Facials]]></name>
+                    <main_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/face-mask.png]]></main_image>
+                    <description><![CDATA[<p>We wear our skin every day, so we should take extra special care of it! All of my facials are done with Rhonda Allison products as this is a top-of-the-line skincare line with products I truly believe make a lasting difference on client's’ skin.</p>]]></description>
+                    <sort_order><![CDATA[4]]></sort_order>
+                </item>
+            </items>
+          </pageset>
+          <!-- 5.3 Services: services(products) pageset -->
+          <pageset name="products" name_friendly="Products" view="products" parent_item="services">
+            <fields>
+                <text name="name" name_friendly="Name" list="1" />
+                <wysiwyg_basic name="description" name_friendly="Description" />
+                <wysiwyg_basic name="specs" name_friendly="Specs (optional)" />
+                <text name="price" name_friendly="Price" list="1" />
+                <images name="main_image" name_friendly="Main Image" list="1" />
+                <images name="additional_images" name_friendly="Additional Images" />
+                <link name="where_to_buy_link" name_friendly="Book Now" />
+                <one_to_one name="product_category" name_friendly="Product Category" relationship="service-category" relationship_field="name" list="1" />
+                <sort name="sort_order" name_friendly="Sort Order" list="1" />
+            </fields>
+            <items>
+                <item link_title="Full Set of Classic Lash Extensions" path_part="full-set-of-classic-lash-extensions" parent="services">
+                    <name><![CDATA[Full Set of Classic Lash Extensions]]></name>
+                    <description><![CDATA[<p>Classic eyelash extensions are when one extension is adhered to every single eyelash. A full set is a 2 hour long appointment wherein I make sure every lash has an extension!&nbsp;</p>]]></description>
+                    <specs><![CDATA[]]></specs>
+                    <price><![CDATA[$380]]></price>
+                    <main_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Lash-Collage-1.jpg]]></main_image>
+                    <additional_images><![CDATA[]]></additional_images>
+                    <where_to_buy_link><![CDATA[]]></where_to_buy_link>
+                    <product_category><![CDATA[556]]></product_category>
+                    <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="Lash Refresh" path_part="lash-refresh" parent="services">
+                    <name><![CDATA[Lash Refresh]]></name>
+                    <description><![CDATA[<p>This isn’t just a typical ‘fill’ where I fill in lashes that have grown out, but I also preemptively replace lashes I anticipate to fall soon, leaving you with a gorgeous full look after every appointment. </p>]]></description>
+                    <specs><![CDATA[]]></specs>
+                    <price><![CDATA[$80]]></price>
+                    <main_image><![CDATA[https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/16583203_1435123783453297_8827209364482818048_n.jpg]]></main_image>
+                    <additional_images><![CDATA[]]></additional_images>
+                    <where_to_buy_link><![CDATA[]]></where_to_buy_link>
+                    <product_category><![CDATA[556]]></product_category>
+                    <sort_order><![CDATA[2]]></sort_order>
+                </item>
+                <item link_title="First Timers" path_part="first-timers" parent="services">
+                    <name><![CDATA[First Timers]]></name>
+                    <description><![CDATA[<p>Microblading is a procedure available to anyone looking for a semi-permanent solution to fill in gaps, sparse brows, or simply have fuller, more defined brows. However, unlike traditional cosmetic tattooing, it is less invasive and is semi-permanent.  Amanda works with each client to map out the desired results, matches color to perfection, and then applies each hairline stroke one by one. The result? Gorgeous brows, every time.</p>]]></description>
+                    <specs><![CDATA[]]></specs>
+                    <price><![CDATA[$650]]></price>
+                    <main_image><![CDATA[https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/14547743_702711093238665_2216216155666776064_n.jpg?ig_cache_key=MTM5MDA4MzI4MjAzNzA2ODUyMg%3D%3D.2]]></main_image>
+                    <additional_images><![CDATA[]]></additional_images>
+                    <where_to_buy_link><![CDATA[]]></where_to_buy_link>
+                    <product_category><![CDATA[557]]></product_category>
+                    <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="Repairs from Other Salons" path_part="microblading-repairs" parent="services">
+                    <name><![CDATA[Repairs from Other Salons]]></name>
+                    <description><![CDATA[<p>Sometimes other professionals are unable to create your exact desired look. If you’d like a consultation to see if reparation or removal is possible, please book an appointment at your earliest convenience.</p>]]></description>
+                    <specs><![CDATA[]]></specs>
+                    <price><![CDATA[Quote Provided at Appointment]]></price>
+                    <main_image><![CDATA[https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/15538581_1814960302095415_6778757487551053824_n.jpg?ig_cache_key=MTQxMTE0OTk2NTgxMTU5MTQyNA%3D%3D.2]]></main_image>
+                    <additional_images><![CDATA[]]></additional_images>
+                    <where_to_buy_link><![CDATA[]]></where_to_buy_link>
+                    <product_category><![CDATA[557]]></product_category>
+                    <sort_order><![CDATA[2]]></sort_order>
+                </item>
+                <item link_title="Brow Design" path_part="brow-design" parent="services">
+                    <name><![CDATA[Brow Design]]></name>
+                    <description><![CDATA[<p>Whether you’re searching for eye-opening arches or a little extra lift in your overall look, the results from this service will leave you looking polished, pretty and put-together.</p>]]></description>
+                    <specs><![CDATA[]]></specs>
+                    <price><![CDATA[$25]]></price>
+                    <main_image><![CDATA[http://xonecole.com/wp-content/uploads/2016/04/browwaxappt_main.jpg]]></main_image>
+                    <additional_images><![CDATA[]]></additional_images>
+                    <where_to_buy_link><![CDATA[]]></where_to_buy_link>
+                    <product_category><![CDATA[558]]></product_category>
+                    <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="Underarms" path_part="underarms" parent="services">
+                    <name><![CDATA[Underarms]]></name>
+                    <description><![CDATA[<p>This procedure lasts 15 minutes and will leave your underarms soft and hair free for up to 3 weeks.</p>]]></description>
+                    <specs><![CDATA[]]></specs>
+                    <price><![CDATA[$35]]></price>
+                    <main_image><![CDATA[http://sineadperez.com/files/2014/11/underarm.jpg]]></main_image>
+                    <additional_images><![CDATA[]]></additional_images>
+                    <where_to_buy_link><![CDATA[]]></where_to_buy_link>
+                    <product_category><![CDATA[558]]></product_category>
+                    <sort_order><![CDATA[2]]></sort_order>
+                </item>
+                <item link_title="Signature Facial" path_part="signature-facial" parent="services">
+                    <name><![CDATA[Signature Facial]]></name>
+                    <description><![CDATA[<p>This facial focuses on infusing the skin with actives that will stimulate, repair and rejuvenate skin tissue. Actives will firm and tone communicate to cells to produce more collagen, giving skin a luminous glow and buoyant, younger-looking appearance. </p>]]></description>
+                    <specs><![CDATA[]]></specs>
+                    <price><![CDATA[$75]]></price>
+                    <main_image><![CDATA[https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/11349299_1721118108157432_2119805562_n.jpg]]></main_image>
+                    <additional_images><![CDATA[]]></additional_images>
+                    <where_to_buy_link><![CDATA[]]></where_to_buy_link>
+                    <product_category><![CDATA[559]]></product_category>
+                    <sort_order><![CDATA[1]]></sort_order>
+                </item>
+                <item link_title="Oatmeal Mask" path_part="oatmeal-mask" parent="services">
+                    <name><![CDATA[Oatmeal Mask]]></name>
+                    <description><![CDATA[<p>Oatmeal is suitable for all skin types, and even for the most sensitive skin because of its anti- inflammatory properties. It soothes irritation and treat inflammations, so it’s safe for acne-prone clients. </p>]]></description>
+                    <specs><![CDATA[]]></specs>
+                    <price><![CDATA[$80]]></price>
+                    <main_image><![CDATA[https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/14591971_1660343154257414_9160344332383813632_n.jpg]]></main_image>
+                    <additional_images><![CDATA[]]></additional_images>
+                    <where_to_buy_link><![CDATA[]]></where_to_buy_link>
+                    <product_category><![CDATA[559]]></product_category>
+                    <sort_order><![CDATA[2]]></sort_order>
+                </item>
+            </items>
+          </pageset>
+          <!-- 6. Social Media  -->
+          <templateset name="social-media" name_friendly="Social Media Page" view="social-media">
+            <fields>
+              <text name="title" name_friendly="Page Title" required="1" />
+              <wysiwyg_advanced name="content" name_friendly="Page Content" />
+              <textarea name="embed_code" name_friendly="Embed Link for Your Social Media Feed" />
+            </fields>
+            <items>
+              <item link_title="Social Media" path_part="social-media">
+                <title><![CDATA[Social Media Page]]></title>
+                <content><![CDATA[<p>Highlight customers using your services who share about it on social media here with an instagram feed! Make an introduction here and embed your feed below.</p>]]></content>
+                <embed_code><![CDATA[<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/d2db2513c86653a9af6a890d04a3eaaa.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>]]></embed_code>
+              </item>
+            </items>
+          </templateset>
+
+
+          <!-- 7. Testimonials -->
+          <templateset name="testimonials" name_friendly="Testimonials" view="testimonials">
+            <fields>
+              <text name="title" name_friendly="Page Title" required="1" />
+              <wysiwyg_advanced name="description" name_friendly="Optional Page Description" />
+              <images name="image" name_friendly="Optional Customers Image" limit="1" />
+            </fields>
+            <items>
+              <item link_title="Testimonials" path_part="testimonials">
+                <title><![CDATA[Testimonials]]></title>
+                <description><![CDATA[<p>Having served the San Diego area for a number of years, I've seen hundreds of clients. Here are a few of their stories.</p>]]></description>
+                <image><![CDATA[]]></image>
+              </item>
+            </items>
+          </templateset>
+          <!-- 7.1 Testimonials pageset -->
+          <pageset name="individual_testimonials" name_friendly="Individual Testimonials" view="individual_testimonials" parent_item="testimonials">
+            <fields>
+              <text name="name" name_friendly="Name" required="1" list="1"/>
+              <text name="title" name_friendly="Instagram Handle" list="1"/>
+              <images name="image" name_friendly="Image" limit="1" list="1"/>
+              <wysiwyg_advanced name="description" name_friendly="Description" />
+              <wysiwyg_advanced name="quote" name_friendly="Highlighted Quote" />
+              <text name="location" name_friendly="Location" />
+              <sort name="sort" name_friendly="Sort Order" list="1"/>
+              <one_to_many name="services_used" name_friendly="Services Used" relationship="service-category" relationship_field="name" />
+            </fields>
+            <items>
+              <item link_title="Rachelle Duckworth" path_part="rachelle-duckworth-master-lash-artist" parent="testimonials">
+                <name><![CDATA[Rachelle Duckworth, Master Lash Artist]]></name>
+                <title><![CDATA[@rduckworth]]></title>
+                <image><![CDATA[https://1f6d6298c93a5c13bc66-b51af920a2f21ba9f3e3bfcd36fc93f6.ssl.cf2.rackcdn.com/rachelle_duckworth_home.jpg]]></image>
+                <description><![CDATA[<p>Danielle is seriously a lash guru!</p>
+                  <p><br />I was feeling extremely discouraged, and ready to give up on lashing. Then I met Danielle and had the opportunity to participate in her training program. She changed everything by providing the right tools and sharing her expert knowledge.</p>
+                  <p><br />Before participating in Danielle&rsquo;s training program, I had been &lsquo;certified&rsquo; through a larger brand. The training was short, and expensive. The product was difficult to work with leaving me constantly frustrated that my results were not up to par. After months of practice I still didn&rsquo;t feel ready to take clients.</p>
+                  <p><br />A friend of mine knew of the frustrations I was having while trying to get my lashing career started and put me in contact with Danielle. After talking to her I knew right away that I wanted to participate in her training program. She is very knowledgeable and passionate about what she does, and it really shows in her work. Her hands on approach and lashing techniques are so valuable.</p>
+                  <p>Upon completing Danielle&rsquo;s training I couldn&rsquo;t wait to get out there and start lashing! I now have the proper set of skills to feel confident and am getting results that I am proud of. I highly encourage anyone that is interested in becoming a lash artist, or a lash artist that is feeling discouraged, to participate in this program! Best decision ever!</p>
+                  <p><em>-Happy Lash Artist (Rachelle D)</em></p>]]></description>
+                <quote><![CDATA[]]></quote>
+                <location><![CDATA[San Diego, CA]]></location>
+                <sort><![CDATA[1]]></sort>
+                <services_used><![CDATA[0]]></services_used>
+              </item>
+              <item link_title="Rachel Doty" path_part="rachel-doty-expert-lash-artist" parent="testimonials">
+                <name><![CDATA[Rachel Doty, Expert Lash Artist]]></name>
+                <title><![CDATA[@racheydoty]]></title>
+                <image><![CDATA[https://1f6d6298c93a5c13bc66-b51af920a2f21ba9f3e3bfcd36fc93f6.ssl.cf2.rackcdn.com/rachel_doty_home.jpg]]></image>
+                <description><![CDATA[<p>&ldquo;Hi my name is Rachel! I was trained through an outside lash company and I was so lost and confused- the things they taught me were only slowing me down more. <br />Danielle and Amanda re-trained me and completely changed my lash life! They were so amazing, sweet, patient, and helpful. In one day, with the tips and tricks, amazing product, time they spent visually showing me, watching me, and answering my questions thoroughly, I went from a struggling lash artist who could barely do a full set in 4 hours with only 30 lashes on each eye to a confident lash artist who can now deliver beautiful, full, lashes on every single lash in half the time. I&rsquo;m forever thankful for Danielle and Amanda! Now I finally feel I&rsquo;m ready to shine as an eyelash specialist.&rdquo;</p>]]></description>
+                <quote><![CDATA[]]></quote>
+                <location><![CDATA[San Diego, CA]]></location>
+                <sort><![CDATA[2]]></sort>
+                <!-- <favorite_product><![CDATA[]]></favorite_product> -->
+              </item>
+              <item link_title="Tifany" path_part="tifany-expert-lash-artist" parent="testimonials">
+                <name><![CDATA[Tifany, Expert Lash Artist]]></name>
+                <title><![CDATA[@s3ren3]]></title>
+                <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Tifany.jpg]]></image>
+                <description><![CDATA[<p>Eyelash extension artist&bull;product junkie&bull;esthetician&bull;artist&bull;jewelry designer&bull;DIY lover&bull;comic lover&bull;sailor moon lover&bull;90's lover&bull;cat lover&bull;no h8&bull; ♡</p>]]></description>
+                <quote><![CDATA[]]></quote>
+                <location><![CDATA[San Diego, CA]]></location>
+                <sort><![CDATA[3]]></sort>
+                <!-- <favorite_product><![CDATA[]]></favorite_product> -->
+              </item>
+            </items>
+          </pageset>
+          <!-- 8. About -->
+          <templateset name="about" name_friendly="About" view="about">
+            <fields>
+              <text name="title" name_friendly="Title" />
+              <images name="image" name_friendly="Image" />
+              <wysiwyg_advanced name="top_content" name_friendly="Top Content" />
+              <textarea name="blockquote" name_friendly="Blockquote Text" />
+              <wysiwyg_advanced name="bottom_content" name_friendly="Bottom Content" />
+            </fields>
+            <items>
+              <item link_title="About" path_part="about">
+                  <title><![CDATA[About Me]]></title>
+                  <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></image>
+                  <top_content>
+                    <![CDATA[<p>The About page is the section of a website where people go to find out about the website   they&rsquo;re on.</p>
+                    <p>Readers will visit this section for many reasons and with various questions they want answered, but your objective is the same: to inform them why they are on the site or why they should be on the site.</p>]]>
+                  </top_content>
+                  <blockquote><![CDATA[Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.]]></blockquote>
+                  <bottom_content><![CDATA[<h3>Provide the Basics at the Top as an Overview</h3>
+                  <p>Your About page should answer the <a href="http://en.wikipedia.org/wiki/Five_Ws">Five Ws</a>:</p>
+                  <ul>
+                  <li><strong>Who</strong> are you?</li>
+                  <li><strong>What</strong> do you do?</li>
+                  <li><strong>When</strong> did you start doing what you&rsquo;re doing?</li>
+                  <li><strong>Where</strong> are you?</li>
+                  <li><strong>How</strong> are you accomplishing what you claim to do?</li>
+                  </ul>
+                  <p><a href="http://sixrevisions.com/content-strategy/about-page-guidelines/">Read More about Writing a great About Page</a></p>]]></bottom_content>
+              </item>
+            </items>
+          </templateset>
+
+        </ingredients>
+    </plate>
