@@ -277,6 +277,38 @@
               </item>
             </items>
           </dataset>
+          <dataset name="homepage_slides" name_friendly="Homepage Slides" parent_item="zesty_home">
+                <fields>
+                    <text name="title" name_friendly="Title" list="1" />
+                    <text name="second_line" name_friendly="Second Line" list="1" />
+                    <files name="background_video" name_friendly="Background Video" list="1" />
+                    <images name="background_image" name_friendly="Background Image (Fallback Image if Video)" list="1" />
+
+                    <text name="button_text" name_friendly="Button Text" list="1" />
+                    <internal_link name="links_to" name_friendly="Links To" list="1" />
+                    <sort name="sort_order" name_friendly="Sort Order" list="1" />
+                </fields>
+                <items>
+                    <item link_title="Office Tour" path_part="">
+                        <title><![CDATA[Offic Tour]]></title>
+                        <second_line><![CDATA[Welcomnig and Professional]]></second_line>
+                        <background_video><![CDATA[https://www.dryospur.com/wp-content/uploads/2017/01/EntVideoSlow.mp4]]></background_video>
+                        <background_image><![CDATA[https://81dc274519e04e0b7b75-4bacd5d0c28453edfcd1536fbb7a78c0.ssl.cf2.rackcdn.com/black-and-white-city-man-people.54d09caebb3d949d1542f932154493b9.jpg]]></background_image>
+                        <button_text><![CDATA[Learn More]]></button_text>
+                        <links_to><![CDATA[501]]></links_to>
+                        <sort_order><![CDATA[1]]></sort_order>
+                    </item>
+                    <item link_title="Special Offers" path_part="">
+                        <title><![CDATA[Insterested in Getting Started?]]></title>
+                        <second_line><![CDATA[Call</br>1-800-555-5555]]></second_line>
+                        <background_video></background_video>
+                        <background_image><![CDATA[https://81dc274519e04e0b7b75-4bacd5d0c28453edfcd1536fbb7a78c0.ssl.cf2.rackcdn.com/black-and-white-city-man-people.54d09caebb3d949d1542f932154493b9.jpg]]></background_image>
+                        <button_text><![CDATA[Contact Us]]></button_text>
+                        <links_to><![CDATA[521]]></links_to>
+                        <sort_order><![CDATA[1]]></sort_order>
+                    </item>
+                </items>
+            </dataset>
           <!-- 2. Book Now -->
 
           <templateset name="book_now" name_friendly="Book Now" view="book_now">
