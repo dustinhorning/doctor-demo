@@ -290,13 +290,22 @@
                 </fields>
                 <items>
                     <item link_title="Office Tour" path_part="">
+                        <title><![CDATA[Another Slide]]></title>
+                        <second_line><![CDATA[More Content About Something]]></second_line>
+                        <background_video><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/563400030.mp4]]></background_video>
+                        <background_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Color-Background.jpg]]></background_image>
+                        <button_text><![CDATA[Learn More]]></button_text>
+                        <links_to><![CDATA[501]]></links_to>
+                        <sort_order><![CDATA[3]]></sort_order>
+                    </item>
+                    <item link_title="Office Tour" path_part="">
                         <title><![CDATA[Offic Tour]]></title>
-                        <second_line><![CDATA[Welcomnig and Professional]]></second_line>
+                        <second_line><![CDATA[Welcoming and Professional]]></second_line>
                         <background_video><![CDATA[https://www.dryospur.com/wp-content/uploads/2017/01/EntVideoSlow.mp4]]></background_video>
                         <background_image><![CDATA[https://81dc274519e04e0b7b75-4bacd5d0c28453edfcd1536fbb7a78c0.ssl.cf2.rackcdn.com/black-and-white-city-man-people.54d09caebb3d949d1542f932154493b9.jpg]]></background_image>
                         <button_text><![CDATA[Learn More]]></button_text>
                         <links_to><![CDATA[501]]></links_to>
-                        <sort_order><![CDATA[1]]></sort_order>
+                        <sort_order><![CDATA[2]]></sort_order>
                     </item>
                     <item link_title="Special Offers" path_part="">
                         <title><![CDATA[Insterested in Getting Started?]]></title>
